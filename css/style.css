@@ -1,0 +1,37 @@
+body {
+	min-width: 2260px;
+	margin: 0;
+	padding: 0;
+	font-size: 30.86px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.main_column {
+	width: 2260px;
+	min-height: 3500px;
+	outline: green 5px solid;
+}
+
+.left_column {
+	float: left;
+	width: 990px;
+	height: 4000px;
+	outline: red 1px solid;
+}
+
+.right_column	{
+	float: right;
+	width: 1270px;
+	outline: green 1px solid;
+}
+
+.columns	{
+
+}
