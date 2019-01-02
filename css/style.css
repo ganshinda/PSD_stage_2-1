@@ -1,15 +1,11 @@
 body {
-	min-width: 2290px;
+	min-width: 2480px;
 	margin: 0;
 	padding: 0;
 	font-size: 30.86px;
+	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
 	color: #000000;
 	background-color: #ffffff;
-}
-
-p {
-	margin: 0;
-	padding: 0;
 }
 
 .clearfix::after {
@@ -18,16 +14,71 @@ p {
 	clear: both;
 }
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.main_container {
+	width: 2480px;
+	margin: 0 auto;
+	padding-top: 100px;
+	outline: purple 2px solid;
+}
+
 .left_column {
 	float: left;
-	width: 970px;
+	width: 1100px;
 	/* height: 4000px; */
 	outline: red 1px solid;
 }
 
 .right_column {
-	float: left;
+	float: right;
 	width: 1320px;
 	outline: green 1px solid;
 }
+
+.main_tab ul {
+	margin: 0;
+	padding: 590px 0 100px 0;
+	list-style: none;
+	text-align: center;
+}
+
+.main_tab ul::before {
+	content: "";
+	position: absolute;
+	top: 208px;
+	left: 358px;
+	width: 400px;
+	height: 400px;
+
+	background-color: #3d6cb0;
+	border: 1px solid #3d6cb0;
+	box-shadow: 0 0 0 29px #ffffff,
+							0 0 0 30px #3d6cb0;
+	border-radius: 50%;
+}
+
+.name {
+	font-family: 'MyriadPro-Light', Arial, Helvetica, sans-serif;
+	font-size: 104.49px;	
+}
+
+.surname {
+	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
+	font-size: 123.45px;
+	line-height: 70%;
+	font-weight: bold;
+}
+
+.profession {
+	padding-top: 30px;
+	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
+	font-size: 49.97px;
+	font-weight: bold;
+}
+
+
 
