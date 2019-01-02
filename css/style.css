@@ -1,5 +1,5 @@
 body {
-	min-width: 2260px;
+	min-width: 2290px;
 	margin: 0;
 	padding: 0;
 	font-size: 30.86px;
@@ -20,14 +20,14 @@ p {
 
 .left_column {
 	float: left;
-	width: 990px;
+	width: 970px;
 	/* height: 4000px; */
 	outline: red 1px solid;
 }
 
 .right_column {
 	float: left;
-	width: 1270px;
+	width: 1320px;
 	outline: green 1px solid;
 }
 
