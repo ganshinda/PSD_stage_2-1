@@ -7,31 +7,27 @@ body {
 	background-color: #ffffff;
 }
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
 .clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.main_column {
-	width: 2260px;
-	min-height: 3500px;
-	outline: green 5px solid;
-}
-
 .left_column {
 	float: left;
 	width: 990px;
-	height: 4000px;
+	/* height: 4000px; */
 	outline: red 1px solid;
 }
 
-.right_column	{
-	float: right;
+.right_column {
+	float: left;
 	width: 1270px;
 	outline: green 1px solid;
 }
 
-.columns	{
-
-}
