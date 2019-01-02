@@ -93,7 +93,8 @@ h2 {
 
 /* --------------- Profile block --------------- */
 .profile	{
-	padding: 75px 0 50px 123px;
+	padding: 75px 0 0 123px;
+	margin-bottom: 32px;
 }
 
 .profile p {
@@ -104,8 +105,8 @@ h2 {
 h2::before {
 	content: "";
 	position: absolute;
-	width: 129px;
-	height: 127px;
+	width: 130px;
+	height: 130px;
 	top: -16px;
 	left: 7px;
 
@@ -126,3 +127,12 @@ h2::after {
 	background-color: #3d6cb0;
 }
 
+/* --------------- Contact block --------------- */
+.contact {
+	padding: 73px 0 50px 123px;
+}
+
+.contact h2::after {
+	width: 296px;
+	left: 528px;
+}
