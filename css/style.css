@@ -41,11 +41,44 @@ p {
 
 h2 {
 	position: relative;
-	margin: 0;
+	float: left;
+	margin: auto;
 	padding: 0 0 0 167px;
 
 	font-size: 82.3px;
 	font-weight: bold;
+	/* outline: green 3px solid; */
+}
+
+h2::before {
+	content: "";
+	position: absolute;
+	width: 126px;
+	height: 126px;
+	top: -16px;
+	left: 7px;
+
+	/* background-color: #0071bb;	 */
+	background: url("../img/icons-sprite.png") no-repeat;
+	border: solid 1px #0071bb;
+	border-radius: 50%;
+	box-shadow: 0 0 0 6px white,
+							0 0 0 7px #0071bb;
+}
+
+.line {
+	/* float: left; */
+	/* margin-left: 20px; */
+	margin: auto auto auto 15px;
+	display: inline-block;
+	/* font-size: 1px; */
+	flex-grow: 1;
+
+	height: 10px;
+	/* line-height: 50px; */
+	/* vertical-align: middle; */
+	background-color: #0071bb;
+	/* outline: red 2px solid; */
 }
 /* --------------- Main tab block --------------- */
 .main_tab {
@@ -54,7 +87,8 @@ h2 {
 	padding: 590px 0 100px 0;
 	list-style: none;
 	text-align: center;
-	outline: green 1px solid;
+	/* outline: green 1px solid; */
+	
 }
 
 .main_tab::before {
@@ -65,10 +99,10 @@ h2 {
 	width: 400px;
 	height: 400px;
 
-	background-color: #3d6cb0;
-	border: 1px solid #3d6cb0;
+	background-color: #0071bb;
+	border: 1px solid #0071bb;
 	box-shadow: 0 0 0 29px #ffffff,
-							0 0 0 30px #3d6cb0;
+							0 0 0 30px #0071bb;
 	border-radius: 50%;
 }
 
@@ -88,13 +122,20 @@ h2 {
 	padding-top: 30px;
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
 	font-size: 49.97px;
+	letter-spacing: -1px;
 	font-weight: bold;
 }
 
 /* --------------- Profile block --------------- */
 .profile	{
+	/* display: table; */
 	padding: 75px 0 0 123px;
 	margin-bottom: 32px;
+	outline: #0071bb 1px solid;
+}
+
+.profile h2::before {
+	background-position: -25px -187px;
 }
 
 .profile p {
@@ -102,37 +143,26 @@ h2 {
 	width: 850px;
 }
 
-h2::before {
-	content: "";
-	position: absolute;
-	width: 130px;
-	height: 130px;
-	top: -16px;
-	left: 7px;
-
-	background-color: #3d6cb0;	
-	border: solid 1px #3d6cb0;
-	border-radius: 50%;
-	box-shadow: 0 0 0 6px white,
-							0 0 0 7px #3d6cb0;
-}
-
-h2::after {
-	position: absolute;
-	content: "";
-	top: 42px;
-	left: 489px;
-	width: 336px;
-	height: 10px;
-	background-color: #3d6cb0;
+.profile_container {
+	display: flex;
+	vertical-align: middle;
+	/* outline: red 3px solid; */
+	min-height: 50px;
+	width: 824px;
 }
 
 /* --------------- Contact block --------------- */
 .contact {
 	padding: 73px 0 50px 123px;
+	outline: #0071bb 1px solid;
+}
+
+.contact h2::before {
+	background-position: -349px -24px;
 }
 
 .contact h2::after {
 	width: 296px;
 	left: 528px;
 }
+
