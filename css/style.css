@@ -53,6 +53,14 @@ p {
 	/* outline: red 3px solid; */
 }
 
+h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 51.44px;
+	font-weight: normal;
+}
+
 h2 {
 	position: relative;
 	float: left;
@@ -190,4 +198,68 @@ h2::before {
 .contacts_menu .data li {
 	padding: 30px 0 30px 80px;
 	font-size: 41.15px;
+}
+/* --------------- Skills block --------------- */
+.skills {
+	padding: 38px 0 50px 118px;
+	outline: #0071bb 1px solid;
+}
+
+.skills h2::before {
+	background-position: -189px -24px;
+}
+
+.personal_skills {
+	margin: 69px 0 0 0;
+}
+/* ------------- centred personal skills elements -------------*/
+.personal_skills h3:nth-of-type(1) {
+	margin: 0px 0 0 320px;
+}
+
+.personal_skills h3:nth-of-type(2) {
+	margin: 0px 0 0 290px;
+}
+
+.personal_skills h3:nth-of-type(3) {
+	margin: 0px 0 0 310px;
+}
+
+.personal_skills h3:nth-of-type(4) {
+	margin: 0px 0 0 222px;
+}
+/* ------------------------------------------------------------- */
+.personal_skills ul {
+	display: flex;
+	margin: 17px 0 40px 0 ;
+	padding-left: 95px;
+}
+
+.personal_skills ul:last-of-type {
+	margin-top: 9px;
+}
+
+.personal_skills	li {
+	margin-right: 20px;
+	width: 35px;
+	height: 35px;
+	border: #3d6cb0 solid 0px;
+	border-radius: 50%;
+	background-color: #3d6cb0;
+}
+
+.creative li:nth-last-child(4) ~ li {
+	background-color: #e6e6e6;	
+}
+
+.teamwork li:nth-last-child(2) ~ li {
+	background-color: #e6e6e6;	
+}
+
+.innovate li:nth-last-child(7) ~ li {
+	background-color: #e6e6e6;	
+}
+
+.communication li:nth-last-child(2) ~ li {
+	background-color: #e6e6e6;	
 }
