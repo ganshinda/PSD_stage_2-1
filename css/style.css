@@ -40,12 +40,12 @@ p {
 }
 
 .right_column {
-	float: right;
+	float: left;
 	width: 1320px;
 	outline: green 1px solid;
 }
 
-.header_container {
+.left_column .header_container {
 	display: flex;
 	vertical-align: middle;
 	min-height: 60px;
@@ -53,10 +53,26 @@ p {
 	/* outline: red 3px solid; */
 }
 
+.right_column .header_container {
+	display: flex;
+	vertical-align: middle;
+	min-height: 60px;
+	width: 1265;
+	/* outline: red 3px solid; */
+}
+
 h3 {
+	position: relative;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
+	font-size: 51.44px;
+	font-weight: normal;
+}
+
+h4 {
+	margin: 0;
+	padding: 0;
 	font-size: 51.44px;
 	font-weight: normal;
 }
@@ -90,19 +106,56 @@ h2::before {
 }
 
 .line {
-	/* float: left; */
-	/* margin-left: 20px; */
 	margin: auto auto auto 15px;
 	display: inline-block;
-	/* font-size: 1px; */
 	flex-grow: 1;
 
 	height: 10px;
-	/* line-height: 50px; */
-	/* vertical-align: middle; */
 	background-color: #3d6cb0;
-	/* outline: red 2px solid; */
 }
+
+/* ---------------common elements Second column--------------- */
+.right_column .column2_content_container {
+	margin-left: 107px;
+	margin-top: 75px;
+	/* outline: 5px red solid; */
+}
+
+.right_column h3 {
+	float: left;
+	font-weight: bold;
+	color: #3d6cb0;
+}
+
+.right_column h3::before {
+	content: "";
+	position: absolute;
+	left: -82px;
+	top: 12px;
+	width: 40px;
+	height: 40px;
+	border: 0px;
+
+	background-color: black;
+	border-radius: 50%;
+}
+
+.right_column h4 {
+	display: inline-block;
+	padding-left: 29px;
+}
+
+.right_column dt h4:first-child {
+	display: inline-block;
+	padding-left: 0;
+	margin-top: 4px;
+	text-transform: uppercase;
+}
+
+.right_column dd {
+	margin: 11px 0 25px 1px;
+}
+
 /* --------------- Main tab block --------------- */
 .main_tab {
 	position: relative;
@@ -263,3 +316,19 @@ h2::before {
 .communication li:nth-last-child(2) ~ li {
 	background-color: #e6e6e6;	
 }
+
+/* --------------- Education block --------------- */
+.education {
+	padding: 73px 0 50px 0px;
+	outline: #0071bb 1px solid;
+}
+
+.education h2::before {
+	background-position: -349px -187px;
+}
+
+.education .header_container {
+	outline: #0071bb 1px solid;
+}
+
+
