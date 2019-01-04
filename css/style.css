@@ -30,19 +30,16 @@ p {
 	width: 2480px;
 	margin: 0 auto;
 	padding-top: 100px;
-	outline: purple 2px solid;
 }
 
 .left_column {
 	float: left;
 	width: 1100px;
-	outline: red 1px solid;
 }
 
 .right_column {
 	float: left;
 	width: 1320px;
-	outline: green 1px solid;
 }
 
 .left_column .header_container {
@@ -331,4 +328,31 @@ h2::before {
 	outline: #0071bb 1px solid;
 }
 
+/* --------------- Experience block --------------- */
+.experience {
+	padding: 42px 0 50px 0px;
+	outline: #0071bb 1px solid;
+}
+
+.experience h3 {
+	color: black;	
+}
+
+.experience h2::before {
+	background-position: -189px -187px;
+}
+
+.experience .column2_content_container {
+	margin-top: 105px;
+}
+
+/* --------------- Software block --------------- */
+.software {
+	padding: 45px 0 50px 0px;
+	outline: #0071bb 1px solid;
+}
+
+.software h2::before {
+	background-position: -25px -24px;
+}
 
