@@ -3,7 +3,7 @@ html {
 	font-size: 1px;
 }
 body {
-	min-width: 2480px;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	font-size: 20.9rem;
@@ -29,23 +29,27 @@ p {
 	padding: 0;
 }
 
-.main_container {
-	width: 2480px;
-	margin: 0;
-	padding-top: 100px;
-	outline: #0071bb solid 1px;
+.container {
+	margin: 0 auto 40px auto;
+	overflow: hidden;
+	/* outline: purple 2px solid; */
+	/* background-color: blue; */
 }
 
 .left_column {
 	float: left;
-	width: 1100px;
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 35%;
 	outline: red solid 1px;
 }
 
 .right_column {
 	/* display: none; */
 	float: left;
-	width: 1320px;
+	margin-top: 5%;
+	/* margin-right: 3.5%; */
+	width: 53.3%;
 	outline: blue solid 1px;
 }
 
@@ -160,45 +164,56 @@ h2::before {
 	margin: 11px 0 25px 1px;
 }
 
-/* --------------- Main tab block --------------- */
-.main_tab {
-	position: relative;
-	padding: 590px 0 100px 0;
+/* --------------- Full_Name block --------------- */
+.full_name {
+	display: block;
+	position: relative;	
+	/* background-color: red; */
+	outline: green 1px solid;
+	/* text-align: center; */
+}
+
+.full_name ul {
+	margin-top: 26px;
 	text-align: center;
 }
 
-.main_tab::before {
-	content: "";
-	position: absolute;
-	top: 107px;
-	left: 351px;
-	width: 400px;
-	height: 400px;
+.circle_container {	
+	padding: 9.6% 0 5% 0;
+	/* width: 80%; */
+	/* outline: red 1px solid;  */
+}
+
+.circle {
+	margin: auto;
+	width: 275px;
+	height: 275px;
 
 	background-color: #0071bb;
-	border: 1px solid #0071bb;
-	box-shadow: 0 0 0 29px #ffffff,
-							0 0 0 30px #0071bb;
+	border: 0px;
+	box-shadow: 0 0 0 19px #ffffff,
+							0 0 0 20px #0071bb;
 	border-radius: 50%;
 }
 
-.main_tab .name {
+.full_name .name {
 	font-family: 'MyriadPro-Light', Arial, Helvetica, sans-serif;
 	font-size: 70.77rem;	
+	letter-spacing: 1rem;
 }
 
-.main_tab .surname {
+.full_name .surname {
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
 	font-size: 83.62rem;
 	line-height: 70%;
 	font-weight: bold;
 }
 
-.main_tab .profession {
-	padding-top: 30px;
+.full_name .profession {
+	padding-top: 20px;
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
 	font-size: 33.85rem;
-	letter-spacing: -1px;
+	letter-spacing: -0.7rem;
 	font-weight: bold;
 }
 
