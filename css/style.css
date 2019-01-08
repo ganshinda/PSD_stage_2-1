@@ -1,9 +1,12 @@
 /* --------------- Common elements --------------- */
+html {
+	font-size: 1px;
+}
 body {
 	min-width: 2480px;
 	margin: 0;
 	padding: 0;
-	font-size: 30.86px;
+	font-size: 20.9rem;
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
 	color: #000000;
 	background-color: #ffffff;
@@ -28,7 +31,7 @@ p {
 
 .main_container {
 	width: 2480px;
-	margin: 0 auto;
+	margin: 0;
 	padding-top: 100px;
 	outline: #0071bb solid 1px;
 }
@@ -36,11 +39,14 @@ p {
 .left_column {
 	float: left;
 	width: 1100px;
+	outline: red solid 1px;
 }
 
 .right_column {
+	/* display: none; */
 	float: left;
 	width: 1320px;
+	outline: blue solid 1px;
 }
 
 .left_column .header_container {
@@ -64,14 +70,14 @@ h3 {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	font-size: 51.44px;
+	font-size: 34.84rem;
 	font-weight: normal;
 }
 
 h4 {
 	margin: 0;
 	padding: 0;
-	font-size: 51.44px;
+	font-size: 34.84rem;
 	font-weight: normal;
 }
 
@@ -81,7 +87,7 @@ h2 {
 	margin: auto;
 	padding: 0 0 0 167px;
 
-	font-size: 82.3px;
+	font-size: 55.74rem;
 	font-weight: bold;
 	color: #3d6cb0;
 	/* outline: green 3px solid; */
@@ -178,12 +184,12 @@ h2::before {
 
 .main_tab .name {
 	font-family: 'MyriadPro-Light', Arial, Helvetica, sans-serif;
-	font-size: 104.49px;	
+	font-size: 70.77rem;	
 }
 
 .main_tab .surname {
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
-	font-size: 123.45px;
+	font-size: 83.62rem;
 	line-height: 70%;
 	font-weight: bold;
 }
@@ -191,7 +197,7 @@ h2::before {
 .main_tab .profession {
 	padding-top: 30px;
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
-	font-size: 49.97px;
+	font-size: 33.85rem;
 	letter-spacing: -1px;
 	font-weight: bold;
 }
@@ -241,14 +247,14 @@ h2::before {
 	padding: 30px 0;
 	/* padding-left: 1px; */
 	font-weight: bold;
-	font-size: 41.15px;
+	font-size: 27.87rem;
 	text-transform: uppercase;
 	color: #3d6cb0;
 }
 
 .contacts_menu .data li {
 	padding: 30px 0 30px 80px;
-	font-size: 41.15px;
+	font-size: 27.87rem;
 }
 /* --------------- Skills block --------------- */
 .skills {
@@ -325,10 +331,6 @@ h2::before {
 	background-position: -349px -187px;
 }
 
-.education .header_container {
-	/* outline: #0071bb 1px solid; */
-}
-
 /* --------------- Experience block --------------- */
 .experience {
 	padding: 42px 0 50px 0px;
@@ -379,7 +381,7 @@ h2::before {
 
 .software ul li:nth-child(2n-1) {
 	text-transform: uppercase;
-	font-size: 51.44px;
+	font-size: 34.84rem;
 	margin-bottom: 25px;
 }
 
