@@ -78,14 +78,11 @@ h4 {
 }
 
 h2 {
-	/* position: relative; */
-	/* float: left; */
 	margin: 0;
-	/* padding: 0 0 0 167px; */
-
+	text-transform: uppercase;
 	font-size: 55.74rem;
 	font-weight: bold;
-	color: #3d6cb0;
+	color: #0071bb;
 	/* outline: green 3px solid; */
 }
 
@@ -99,7 +96,7 @@ h2 {
 .right_column h3 {
 	float: left;
 	font-weight: bold;
-	color: #3d6cb0;
+	color: #0071bb;
 }
 
 .right_column h3::before {
@@ -180,22 +177,22 @@ h2 {
 }
 /* --------------- Header block --------------- */
 header.header_container {
-	margin: 20px 0 18px 0;
+	margin: 20px 0 11px 0;
 }
 
 header.header_container ul {
 	display: flex;
 }
 
-header.header_container .logo {
-	/* display: flex; */	
+/* header.header_container .logo {
+	display: flex;	
 	width: auto;
-	height: 97px;	
-}
+	height: auto;
+} */
 
 header.header_container svg {
 	width: 101.13px;
-	height: auto;
+	height: 97px;	
 }
 
 header.header_container .name {
@@ -208,6 +205,7 @@ header.header_container .name {
 
 header.header_container h2 {
 	margin: auto 0 auto 0;
+	padding-bottom: 4.5rem;
 }
 
 header.header_container .line_container {
@@ -221,11 +219,10 @@ header.header_container .line {
 	
 	flex-grow: 1;
 	height: 7%;
-	background-color: #3d6cb0;
+	background-color: #0071bb;
 }
 /* --------------- Profile block --------------- */
 section.profile	{
-	outline: red 1px solid ;
 }
 
 section.profile .container {
@@ -241,37 +238,53 @@ section.profile p b {
 }
 
 /* --------------- Contact block --------------- */
-.contact {
-	padding: 82px 0 50px 122px;
-	/* outline: #0071bb 1px solid; */
+section.contact {
+	padding-top: 2.5rem;
+	outline: blue 1px solid;
 }
 
-.contact h2::before {
-	background-position: -349px -24px;
+section.contact header.header_container .name {
+	min-width: 240px;
 }
 
-.contacts_menu {
+section.contact header.header_container svg {
+	width: 97px;
+	height: 97px;	
+}
+
+section.contact header.header_container .name {
+	padding-left: 15px;
+}
+
+section.contact header.header_container .line {
+	margin: 44px 10% auto 3%;
+}
+
+section.contact .contacts_menu {
 	display: flex;
-	margin-top: 53px;
-	/* outline: red 1px solid; */
+	padding-top: 26.5rem;
 }
 
-.contacts_menu .data {
-	flex-grow: 1;
-}
-
-.contacts_menu .names li {
-	padding: 30px 0;
-	/* padding-left: 1px; */
-	font-weight: bold;
+section.contact .contacts_menu .names,
+section.contact .contacts_menu .data {
+	overflow: hidden;
 	font-size: 27.87rem;
+}
+
+section.contact .contacts_menu .names {
+	width: 29.9%;
+}
+
+section.contact .contacts_menu .names li {
+	/* padding-left: 1px; */
+	padding-bottom: 40rem;
+	font-weight: bold;
 	text-transform: uppercase;
 	color: #3d6cb0;
 }
 
-.contacts_menu .data li {
-	padding: 30px 0 30px 80px;
-	font-size: 27.87rem;
+section.contact .contacts_menu .data li {
+	padding-bottom: 40rem;
 }
 /* --------------- Skills block --------------- */
 .skills {
