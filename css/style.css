@@ -49,16 +49,8 @@ p {
 	float: left;
 	margin-top: 5%;
 	/* margin-right: 3.5%; */
-	width: 53.3%;
+	width: 55%;
 	outline: blue solid 1px;
-}
-
-.left_column .header_container {
-	display: flex;
-	vertical-align: middle;
-	min-height: 60px;
-	width: 824px;
-	/* outline: red 3px solid; */
 }
 
 .right_column .header_container {
@@ -86,40 +78,15 @@ h4 {
 }
 
 h2 {
-	position: relative;
-	float: left;
-	margin: auto;
-	padding: 0 0 0 167px;
+	/* position: relative; */
+	/* float: left; */
+	margin: 0;
+	/* padding: 0 0 0 167px; */
 
 	font-size: 55.74rem;
 	font-weight: bold;
 	color: #3d6cb0;
 	/* outline: green 3px solid; */
-}
-
-h2::before {
-	content: "";
-	position: absolute;
-	width: 126px;
-	height: 126px;
-	top: -16px;
-	left: 7px;
-
-	/* background-color: #0071bb;	 */
-	background: url("../img/icons-sprite.png") no-repeat;
-	border: solid 1px #0071bb;
-	border-radius: 50%;
-	box-shadow: 0 0 0 6px white,
-							0 0 0 7px #0071bb;
-}
-
-.line {
-	margin: auto auto auto 15px;
-	display: inline-block;
-	flex-grow: 1;
-
-	height: 10px;
-	background-color: #3d6cb0;
 }
 
 /* ---------------common elements Second column--------------- */
@@ -165,13 +132,10 @@ h2::before {
 }
 
 /* --------------- Full_Name block --------------- */
-.full_name {
+/* .full_name {
 	display: block;
 	position: relative;	
-	/* background-color: red; */
-	outline: green 1px solid;
-	/* text-align: center; */
-}
+} */
 
 .full_name ul {
 	margin-top: 26px;
@@ -180,8 +144,6 @@ h2::before {
 
 .circle_container {	
 	padding: 9.6% 0 5% 0;
-	/* width: 80%; */
-	/* outline: red 1px solid;  */
 }
 
 .circle {
@@ -216,25 +178,80 @@ h2::before {
 	letter-spacing: -0.7rem;
 	font-weight: bold;
 }
+/* --------------- Header block --------------- */
+header.header_container {
+	margin: 20px 0 20px 0;
+	outline: red 2px solid ;
+}
 
+header.header_container ul {
+	display: flex;
+}
+
+header.header_container .logo {
+	/* display: flex; */	
+	width: auto;
+	height: 97px;	
+}
+
+header.header_container svg {
+	width: 101.13px;
+	height: auto;
+}
+
+header.header_container .name {
+	display: flex;
+	padding-left: 11px;
+	min-width: 210px;
+	overflow: hidden;
+	
+}
+
+header.header_container h2 {
+	margin: auto 0 auto 0;
+}
+
+header.header_container .line_container {
+	display: flex;
+	width: 100%;
+}
+
+header.header_container .line {
+	margin: 44px 9% auto 3.9%;
+	display: inline-block;
+	
+	flex-grow: 1;
+	height: 7%;
+	background-color: #3d6cb0;
+}
 /* --------------- Profile block --------------- */
-.profile	{
+section.profile	{
 	/* display: table; */
-	padding: 75px 0 0 123px;
-	margin-bottom: 32px;
+	/* padding: 0px 0 0 0px; */
+	/* margin-bottom: 0px; */
 	/* outline: #0071bb 1px solid; */
 }
 
-.profile h2::before {
+section.profile .container {
+	margin-top: 43px;	
+}
+
+section.profile .header_container {
+	
+}
+
+/* .profile h2::before {
 	background-position: -25px -187px;
+} */
+
+section.profile p {
+	
+	outline: green 1px solid;
+	/* margin-top: 0px; */
+	/* width: 850px; */
 }
 
-.profile p {
-	margin-top: 46px;
-	width: 850px;
-}
-
-.profile p b {
+section.profile p b {
 	line-height: 123%;
 }
 
