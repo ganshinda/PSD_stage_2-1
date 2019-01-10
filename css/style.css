@@ -180,8 +180,7 @@ h2 {
 }
 /* --------------- Header block --------------- */
 header.header_container {
-	margin: 20px 0 20px 0;
-	outline: red 2px solid ;
+	margin: 20px 0 18px 0;
 }
 
 header.header_container ul {
@@ -226,29 +225,15 @@ header.header_container .line {
 }
 /* --------------- Profile block --------------- */
 section.profile	{
-	/* display: table; */
-	/* padding: 0px 0 0 0px; */
-	/* margin-bottom: 0px; */
-	/* outline: #0071bb 1px solid; */
+	outline: red 1px solid ;
 }
 
 section.profile .container {
 	margin-top: 43px;	
 }
 
-section.profile .header_container {
-	
-}
-
-/* .profile h2::before {
-	background-position: -25px -187px;
-} */
-
 section.profile p {
-	
-	outline: green 1px solid;
-	/* margin-top: 0px; */
-	/* width: 850px; */
+	line-height: 120%;
 }
 
 section.profile p b {
