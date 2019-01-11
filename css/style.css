@@ -134,16 +134,16 @@ h2 {
 	position: relative;	
 } */
 
-.full_name ul {
+section.full_name ul {
 	margin-top: 26px;
 	text-align: center;
 }
 
-.circle_container {	
+section.full_name .circle_container {	
 	padding: 9.6% 0 5% 0;
 }
 
-.circle {
+section.full_name .circle {
 	margin: auto;
 	width: 275px;
 	height: 275px;
@@ -155,20 +155,20 @@ h2 {
 	border-radius: 50%;
 }
 
-.full_name .name {
+section.full_name .name {
 	font-family: 'MyriadPro-Light', Arial, Helvetica, sans-serif;
 	font-size: 70.77rem;	
 	letter-spacing: 1rem;
 }
 
-.full_name .surname {
+section.full_name .surname {
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
 	font-size: 83.62rem;
 	line-height: 70%;
 	font-weight: bold;
 }
 
-.full_name .profession {
+section.full_name .profession {
 	padding-top: 20px;
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
 	font-size: 33.85rem;
@@ -240,11 +240,6 @@ section.profile p b {
 /* --------------- Contact block --------------- */
 section.contact {
 	padding-top: 2.5rem;
-	outline: blue 1px solid;
-}
-
-section.contact header.header_container .name {
-	min-width: 240px;
 }
 
 section.contact header.header_container svg {
@@ -253,7 +248,9 @@ section.contact header.header_container svg {
 }
 
 section.contact header.header_container .name {
+	min-width: 240px;
 	padding-left: 15px;
+	letter-spacing: 0.3rem;
 }
 
 section.contact header.header_container .line {
@@ -275,79 +272,82 @@ section.contact .contacts_menu .names {
 	width: 29.9%;
 }
 
-section.contact .contacts_menu .names li {
-	/* padding-left: 1px; */
+section.contact .contacts_menu li {
 	padding-bottom: 40rem;
+}
+
+section.contact .contacts_menu li:last-child {
+	padding-bottom: 0;
+}
+
+section.contact .contacts_menu .names li {
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #3d6cb0;
+	color: #0071bb;
 }
 
-section.contact .contacts_menu .data li {
-	padding-bottom: 40rem;
-}
 /* --------------- Skills block --------------- */
-.skills {
-	padding: 38px 0 50px 118px;
-	/* outline: #0071bb 1px solid; */
+section.skills header.header_container svg {
+	width: 97px;
+	height: 97px;	
 }
 
-.skills h2::before {
-	background-position: -189px -24px;
+section.skills header.header_container .name {
+	min-width: 174px;
+	padding-left: 12rem;
+	padding-bottom: 3rem;
 }
 
-.personal_skills {
-	margin: 69px 0 0 0;
-}
-/* ------------- centred personal skills elements -------------*/
-.personal_skills h3:nth-of-type(1) {
-	margin: 0px 0 0 320px;
+section.skills header.header_container .line {
+	margin: 43rem 9% auto 4%;
 }
 
-.personal_skills h3:nth-of-type(2) {
-	margin: 0px 0 0 290px;
+section.skills {
+	padding-top: 2.5rem;
 }
 
-.personal_skills h3:nth-of-type(3) {
-	margin: 0px 0 0 310px;
+section.skills section.personal_skills {
+	margin-top: 24rem;	
+	width: 96.5%;
+	text-align: center;
 }
 
-.personal_skills h3:nth-of-type(4) {
-	margin: 0px 0 0 222px;
-}
-/* ------------------------------------------------------------- */
-.personal_skills ul {
+section.skills .personal_skills ul {
 	display: flex;
-	margin: 17px 0 40px 0 ;
-	padding-left: 95px;
+	margin: 10rem 0 28rem 0 ;
+	padding-left: 10.8%;
 }
 
-.personal_skills ul:last-of-type {
+section.skills .personal_skills ul:last-of-type {
 	margin-top: 9px;
 }
 
-.personal_skills	li {
-	margin-right: 20px;
-	width: 35px;
-	height: 35px;
-	border: #3d6cb0 solid 0px;
+section.skills	.circle {
+	width: 23.6rem;
+	height: 23.6rem;
+	border: #0071bb solid 0px;
 	border-radius: 50%;
-	background-color: #3d6cb0;
+	background-color: #0071bb;
 }
 
-.creative li:nth-last-child(4) ~ li {
+section.skills .personal_skills	li {
+	margin-right: 2.69%;
+}
+
+/* ------------- gray color for circle skills elements -------------*/
+.creative li:nth-last-child(4) ~ li .circle{
 	background-color: #e6e6e6;	
 }
 
-.teamwork li:nth-last-child(2) ~ li {
+.teamwork li:nth-last-child(2) ~ li .circle{
 	background-color: #e6e6e6;	
 }
 
-.innovate li:nth-last-child(7) ~ li {
+.innovate li:nth-last-child(7) ~ li .circle{
 	background-color: #e6e6e6;	
 }
 
-.communication li:nth-last-child(2) ~ li {
+.communication li:nth-last-child(2) ~ li .circle{
 	background-color: #e6e6e6;	
 }
 
@@ -355,10 +355,6 @@ section.contact .contacts_menu .data li {
 .education {
 	padding: 73px 0 50px 0px;
 	/* outline: #0071bb 1px solid; */
-}
-
-.education h2::before {
-	background-position: -349px -187px;
 }
 
 /* --------------- Experience block --------------- */
@@ -371,10 +367,6 @@ section.contact .contacts_menu .data li {
 	color: black;	
 }
 
-.experience h2::before {
-	background-position: -189px -187px;
-}
-
 .experience .column2_content_container {
 	margin-top: 105px;
 }
@@ -385,9 +377,6 @@ section.contact .contacts_menu .data li {
 	/* outline: #0071bb 1px solid; */
 }
 
-.software h2::before {
-	background-position: -25px -24px;
-}
 .software .column2_content_container {
 	display: flex;
 	margin-top: 70px;
