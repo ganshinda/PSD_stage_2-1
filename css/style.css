@@ -18,15 +18,15 @@ ul {
 	padding: 0;
 }
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
 .clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-p {
-	margin: 0;
-	padding: 0;
 }
 
 .container {
@@ -41,24 +41,18 @@ p {
 	margin-top: 5%;
 	margin-left: 5%;
 	width: 35%;
-	outline: red solid 1rem;
+	/* outline: red solid 1rem; */
 }
 
 .right_column {
-	/* display: none; */
 	float: left;
 	margin-top: 5%;
-	/* margin-right: 3.5%; */
-	width: 55%;
+	width: 57%;
 	outline: blue solid 1rem;
 }
 
 .right_column .header_container {
 	display: flex;
-	vertical-align: middle;
-	min-height: 60rem;
-	width: 1265;
-	/* outline: red 3rem solid; */
 }
 
 h3 {
@@ -87,46 +81,54 @@ h2 {
 }
 
 /* ---------------common elements Second column--------------- */
-.right_column .column2_content_container {
-	margin-left: 107rem;
-	margin-top: 75rem;
-	/* outline: 5rem red solid; */
+section.right_column header.header_container {
+	margin-left: 8.6%;
 }
 
-.right_column h3 {
+section.right_column h3 {
 	float: left;
 	font-weight: bold;
 	color: #0071bb;
 }
 
-.right_column h3::before {
+section.right_column h3::before {
 	content: "";
 	position: absolute;
-	left: -82rem;
-	top: 12rem;
-	width: 40rem;
-	height: 40rem;
+	left: -54rem;
+	top: 9rem;
+	width: 27rem;
+	height: 27rem;
 	border: 0rem;
 
 	background-color: black;
 	border-radius: 50%;
 }
 
-.right_column h4 {
+section.right_column h4 {
 	display: inline-block;
-	padding-left: 29rem;
+	padding-left: 2.6%;
 }
 
-.right_column dt h4:first-child {
+section.right_column dt h4:first-child {
 	display: inline-block;
 	padding-left: 0;
 	margin-top: 4rem;
 	text-transform: uppercase;
 }
 
-.right_column dd {
-	margin: 11rem 0 25rem 1rem;
+section.right_column dd {
+	margin:6rem 0 17rem 0.3%;
+	line-height: 120%;
 }
+
+section.right_column dd:nth-of-type(2) {
+	margin-bottom: 16rem;
+}
+
+section.right_column dd:nth-of-type(3) {
+	margin-bottom: 14rem;
+}
+
 
 /* --------------- Full_Name block --------------- */
 /* .full_name {
@@ -344,23 +346,24 @@ section.skills .personal_skills	li {
 }
 
 /* --------------- Education block --------------- */
+section.education .column2_content_container {
+	margin-left: 16%;
+	margin-top: 29rem;
+}
+
 section.education header.header_container svg {
-	width: 97rem;
-	height: 97rem;	
+	width: 98rem;
+	height: 98rem;	
 }
 
 section.education header.header_container .name {
 	min-width: 294rem;
-	padding-left: 12rem;
+	padding-left: 26rem;
 	padding-bottom: 3rem;
 }
 
 section.education header.header_container .line {
-	margin: 43rem 9% auto 4%;
-}
-section.education {
-	padding: 73rem 0 50rem 0rem;
-	/* outline: #0071bb 1rem solid; */
+	margin: 43rem 2.5% auto 3.8%;
 }
 
 /* --------------- Experience block --------------- */
