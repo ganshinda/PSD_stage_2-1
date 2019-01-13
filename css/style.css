@@ -80,7 +80,7 @@ h2 {
 	/* outline: green 3rem solid; */
 }
 
-/* ---------------common elements Second column--------------- */
+/* ---------------common elements Second column--------------- */ 
 section.right_column header.header_container {
 	margin-left: 8.6%;
 }
@@ -367,18 +367,40 @@ section.education header.header_container .line {
 }
 
 /* --------------- Experience block --------------- */
-.experience {
-	padding: 42rem 0 50rem 0rem;
-	/* outline: #0071bb 1rem solid; */
+section.experience .column2_content_container {
+	margin-left: 16%;
+	margin-top: 46rem;
 }
 
-.experience h3 {
-	color: black;	
+section.experience	header.header_container {
+	margin-top: 8rem;
 }
 
-.experience .column2_content_container {
-	margin-top: 105rem;
+section.experience header.header_container svg {
+	width: 104rem;
+	height: 104rem;	
 }
+
+section.experience header.header_container .name {
+	min-width: 304rem;
+	padding-left: 21rem;
+	padding-bottom: 0rem;
+}
+
+section.experience header.header_container .line {
+	margin: 48rem 2.5% auto 1.2%;
+	height: 7rem;
+}
+
+section.experience h3 {
+	color: black;
+} 
+
+section.experience dd {
+	margin-top: 7rem;
+	margin-bottom: 15rem;
+}
+
 
 /* --------------- Software block --------------- */
 .software {
