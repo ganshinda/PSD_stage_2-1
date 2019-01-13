@@ -80,7 +80,7 @@ h2 {
 	/* outline: green 3rem solid; */
 }
 
-/* ---------------common elements Second column--------------- */ 
+/* ---------------common elements Second column--------------- */
 section.right_column header.header_container {
 	margin-left: 8.6%;
 }
@@ -367,11 +367,6 @@ section.education header.header_container .line {
 }
 
 /* --------------- Experience block --------------- */
-section.experience .column2_content_container {
-	margin-left: 16%;
-	margin-top: 46rem;
-}
-
 section.experience	header.header_container {
 	margin-top: 8rem;
 }
@@ -392,6 +387,11 @@ section.experience header.header_container .line {
 	height: 7rem;
 }
 
+section.experience .column2_content_container {
+	margin-left: 16%;
+	margin-top: 46rem;
+}
+
 section.experience h3 {
 	color: black;
 } 
@@ -403,66 +403,99 @@ section.experience dd {
 
 
 /* --------------- Software block --------------- */
-.software {
+/* section.software {
 	padding: 45rem 0 50rem 0rem;
-	/* outline: #0071bb 1rem solid; */
-}
+	outline: #0071bb 1rem solid; 
+} */
 
-.software .column2_content_container {
+/* section.software .column2_content_container {
 	display: flex;
 	margin-top: 70rem;
 	margin-left: 14rem;
-	/* outline: blue solid 1rem; */
-}
-
-.software ul {
-	width: 553rem;
-	/* outline: red 1rem solid; */
-}
-
-/* .software .skills2 {
-	width: 400rem;
 } */
 
-.software .skills_software:first-child {
-	margin-right: 140rem;
-	/* outline: blue 4rem solid; */
+section.software	header.header_container {
+	margin-top: 8rem;
 }
 
-.software ul li:nth-child(2n-1) {
+section.software header.header_container svg {
+	width: 99rem;
+	height: 99rem;	
+}
+
+section.software header.header_container .name {
+	min-width: 277rem;
+	padding-left: 26rem;
+	padding-top: 4rem;
+}
+
+section.software header.header_container .line {
+	margin: 48rem 2.2% auto 7%;
+	height: 7rem;
+}
+
+section.software .column2_content_container {
+	margin-left: 9.5%;
+	margin-top: 28rem;
+}
+
+section.software .skills_software:first-child {
+	float: left;
+	width: 43.8%;
+}
+
+section.software .skills_software:last-child {
+	float: right;
+	width: 43.7%;
+	padding-right: 1.7%;
+}
+
+section.software .skills_software:last-child li:nth-child(2n-1) {
+	padding-left: 3rem;
+}
+
+section.software .column2_content_container ul li:nth-child(2n-1) {
 	text-transform: uppercase;
 	font-size: 34.84rem;
-	margin-bottom: 25rem;
+	margin-bottom: 17rem;
 }
 
-.software ul li:nth-child(2n) {
+section.software .column2_content_container ul li:nth-child(2n) {
 	flex-grow: 	1;
-	margin-bottom: 45rem;
-	height: 45rem;
-	background-color: #3d6cb0;
+	margin-left: 0.1%;
+	margin-bottom: 31rem;
+	height: 30rem;
+}
+
+section.software .column2_content_container ul li:nth-child(3) {
+	margin-bottom: 15rem;
+}
+
+section.software .column2_content_container ul li:nth-child(5) {
+	margin-bottom: 11rem;
 }
 
 /* --------------- gradient lines colors --------------- */
-.software .skills_software:first-child li:nth-child(2) {
-	background-image: linear-gradient(to right, #3d6cb0 91%, #e7e7e7 91%);
+section.software .skills_software:first-child li:nth-child(2) {
+	background-image: linear-gradient(to right, #0071bb 91%, #e7e7e7 91%);
 }
 
-.software .skills_software:first-child li:nth-child(4) {
-	background-image: linear-gradient(to right, #3d6cb0 71%, #e7e7e7 71%);
+section.software .skills_software:first-child li:nth-child(4) {
+	background-image: linear-gradient(to right, #0071bb 70.5%, #e7e7e7 70.5%);
 }
 
-.software .skills_software:first-child li:nth-child(6) {
-	background-image: linear-gradient(to right, #3d6cb0 56%, #e7e7e7 56%);
+section.software .skills_software:first-child li:nth-child(6) {
+	background-image: linear-gradient(to right, #0071bb 56%, #e7e7e7 56%);
 }
 
-.software .skills_software:last-child li:nth-child(2) {
-	background-image: linear-gradient(to right, #3d6cb0 83%, #e7e7e7 83%);
+section.software .skills_software:last-child li:nth-child(2) {
+	background-image: linear-gradient(to right, #0071bb 83%, #e7e7e7 83%);
 }
 
-.software .skills_software:last-child li:nth-child(4) {
-	background-image: linear-gradient(to right, #3d6cb0 62%, #e7e7e7 62%);
+section.software .skills_software:last-child li:nth-child(4) {
+	background-image: linear-gradient(to right, #0071bb 62%, #e7e7e7 62%);
 }
 
-.software .skills_software:last-child li:nth-child(6) {
-	background-image: linear-gradient(to right, #3d6cb0 91%, #e7e7e7 91%);
+section.software .skills_software:last-child li:nth-child(6) {
+	background-image: linear-gradient(to right, #0071bb 91%, #e7e7e7 91%);
 }
