@@ -48,7 +48,6 @@ p {
 	float: left;
 	margin-top: 5%;
 	width: 57%;
-	outline: blue solid 1rem;
 }
 
 .right_column .header_container {
@@ -87,6 +86,7 @@ section.right_column header.header_container {
 
 section.right_column h3 {
 	float: left;
+	padding-right: 2.6%;
 	font-weight: bold;
 	color: #0071bb;
 }
@@ -106,7 +106,7 @@ section.right_column h3::before {
 
 section.right_column h4 {
 	display: inline-block;
-	padding-left: 2.6%;
+	/* padding-left: 2.6%; */
 }
 
 section.right_column dt h4:first-child {
@@ -118,7 +118,7 @@ section.right_column dt h4:first-child {
 
 section.right_column dd {
 	margin:6rem 0 17rem 0.3%;
-	line-height: 120%;
+	line-height: 25rem;
 }
 
 section.right_column dd:nth-of-type(2) {
@@ -131,18 +131,13 @@ section.right_column dd:nth-of-type(3) {
 
 
 /* --------------- Full_Name block --------------- */
-/* .full_name {
-	display: block;
-	position: relative;	
-} */
-
 section.full_name ul {
 	margin-top: 26rem;
 	text-align: center;
 }
 
 section.full_name .circle_container {	
-	padding: 9.6% 0 5% 0;
+	padding: 56rem 0 29rem 0;
 }
 
 section.full_name .circle {
@@ -153,7 +148,7 @@ section.full_name .circle {
 	background-color: #0071bb;
 	border: 0rem;
 	box-shadow: 0 0 0 19rem #ffffff,
-							0 0 0 20rem #0071bb;
+							0 0 0 20.2rem #0071bb;
 	border-radius: 50%;
 }
 
@@ -166,12 +161,12 @@ section.full_name .name {
 section.full_name .surname {
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
 	font-size: 83.62rem;
-	line-height: 70%;
+	line-height: 56rem;
 	font-weight: bold;
 }
 
 section.full_name .profession {
-	padding-top: 20rem;
+	padding-top: 23rem;
 	font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
 	font-size: 33.85rem;
 	letter-spacing: -0.7rem;
@@ -197,7 +192,6 @@ header.header_container .name {
 	padding-left: 11rem;
 	min-width: 210rem;
 	overflow: hidden;
-	
 }
 
 header.header_container h2 {
@@ -211,11 +205,11 @@ header.header_container .line_container {
 }
 
 header.header_container .line {
-	margin: 44rem 9% auto 3.9%;
+	margin: 42rem 9% auto 3.9%;
 	display: inline-block;
 	
 	flex-grow: 1;
-	height: 7%;
+	height: 7rem;
 	background-color: #0071bb;
 }
 /* --------------- Profile block --------------- */
@@ -223,12 +217,21 @@ section.profile .container {
 	margin-top: 43rem;	
 }
 
+section.profile header.header_container .name {
+	padding-left: 12rem;
+	padding-bottom: 3rem;
+}
+
+section.profile header.header_container {
+	margin-bottom: 10rem;
+}
+
 section.profile p {
-	line-height: 120%;
+	line-height: 25rem;
 }
 
 section.profile p b {
-	line-height: 123%;
+	line-height: 25rem;
 }
 
 /* --------------- Contact block --------------- */
@@ -263,7 +266,7 @@ section.contact .contacts_menu .data {
 }
 
 section.contact .contacts_menu .names {
-	width: 29.9%;
+	width: 172rem;
 }
 
 section.contact .contacts_menu li {
@@ -301,19 +304,23 @@ section.skills {
 }
 
 section.skills section.personal_skills {
+	margin: 0rem;
 	margin-top: 24rem;	
-	width: 96.5%;
+	padding-right: 17rem;
+	/* width: 100%; */
 	text-align: center;
 }
 
 section.skills .personal_skills ul {
 	display: flex;
-	margin: 10rem 0 28rem 0 ;
-	padding-left: 10.8%;
+	margin: 11rem auto 28rem auto;
+	/* padding-left: 10.8%; */
 }
 
-section.skills .personal_skills ul:last-of-type {
-	margin-top: 9rem;
+section.skills .personal_skills .circles_container:last-of-type ul {
+	margin: auto;
+	margin-top: 5rem;
+	/* outline: red 1px solid; */
 }
 
 section.skills	.circle {
@@ -324,8 +331,16 @@ section.skills	.circle {
 	background-color: #0071bb;
 }
 
+section.skills	.circles_container {
+	display: flex;
+	/* width: 100%; */
+	/* outline: red 1px solid; */
+}
+
 section.skills .personal_skills	li {
-	margin-right: 2.69%;
+	/* margin-right: 2.69%; */
+	margin-right: 14rem;
+	/* outline: red 1px solid; */
 }
 
 /* -------- gray color for circle skills elements --------*/
@@ -435,22 +450,23 @@ section.software header.header_container .line {
 }
 
 section.software .column2_content_container {
-	margin-left: 9.5%;
+	/* margin-left: 9.5%; */
 	margin-top: 28rem;
 }
 
 section.software .skills_software:first-child {
 	float: left;
-	width: 43.8%;
+	padding-left: 9.5%;
+	min-width: 39.7%;
 }
 
 section.software .skills_software:last-child {
 	float: right;
-	width: 43.7%;
+	min-width: 39.3%;
 	padding-right: 1.7%;
 }
 
-section.software .skills_software:last-child li:nth-child(2n-1) {
+section.software .skills_software:last-child li:nth-child(2n-1) {	
 	padding-left: 3rem;
 }
 
@@ -499,3 +515,93 @@ section.software .skills_software:last-child li:nth-child(4) {
 section.software .skills_software:last-child li:nth-child(6) {
 	background-image: linear-gradient(to right, #0071bb 91%, #e7e7e7 91%);
 }
+
+
+/* for FHD monitors */
+@media only screen and (min-width: 1681px) {
+	html {
+		font-size: 1.142857px;
+	}	
+	body {		
+		background-color: rgba(255, 255, 0, 0.1);
+	}
+
+	section.profile p {
+		line-height: 25rem;
+	}
+	
+	section.profile p b {
+		line-height: 25rem;
+	}
+
+}
+
+/* for smallest resolutions monitors */
+@media only screen and (min-width: 1261px) and (max-width: 1400px) {
+	.left_column {
+		margin-top: 2.5%;
+		margin-left: 2.5%;
+		outline: red 1px solid;
+	}
+	
+	.right_column {
+		margin-top: 2.5%;
+		width: 60%;
+	}
+	section.skills .personal_skills ul {
+		padding-left: 0rem;
+	}
+
+}
+
+/* for smallest resolutions monitors */
+@media only screen and (max-width: 1260px) {
+	.left_column {
+		float: none;
+		width: auto;
+		margin-top: 2.5%;
+		margin-left: 5%;
+		margin-right: 5%;
+		outline: red 1px solid;
+	}
+
+	section.left_column section.profile p {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.right_column {
+		margin-left: 5%;
+		margin-right: 5%;
+		width: auto;
+		outline: blue 1px solid;
+	}
+	
+	section.contact .contacts_menu {
+		margin: auto;
+	}
+
+	section.contact .contacts_container {		
+		display: flex;
+	}
+
+	section.right_column header.header_container {
+		margin-left: 0%;
+	}
+
+	section.right_column header.header_container .name {
+		padding-left: 12rem;
+	}
+	
+	section.right_column header.header_container .line {
+		margin: 43rem 10% auto 4%;
+	}
+
+	
+
+	/* section.skills .personal_skills ul {
+		padding-left: 0rem;
+	} */
+
+}
+
